@@ -37,7 +37,7 @@ class CursesColorTheme(object):
 			colorPair.init(colorPairId)
 			colorPairId += 1
 	
-class BuntuStickTheme(CursesColorTheme):
+class BuntuStickerTheme(CursesColorTheme):
 	
 	def __init__(self, init=False):
 		super().__init__()
@@ -68,4 +68,4 @@ class Gui(object):
 	def run(self):
 		curses.wrapper(self.wrapperCallback)
 		
-Gui(BuntuStickTheme()).run()
+Gui(BuntuStickerTheme()).run()
